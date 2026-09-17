@@ -7,7 +7,7 @@ Assumption (edit these to match your own reasoning in the README):
   - Missing a fraud (false negative) costs ~ the average fraudulent amount.
   - A false alarm (false positive) costs a fixed review/friction cost.
 """
-import numpy as np
+
 import joblib
 from sklearn.metrics import precision_recall_curve
 
@@ -50,7 +50,7 @@ def main():
     threshold, info = find_optimal_threshold(y_test, y_proba)
     print(f"Optimal threshold: {threshold:.4f}")
     print(f"Estimated cost at this threshold: ${info['estimated_cost']:.2f}")
-    print(f"(vs. default 0.5 threshold — compare this yourself for the README)")
+    print("(vs. default 0.5 threshold — compare this yourself for the README)")
 
     with open("models/threshold.txt", "w") as f:
         f.write(str(threshold))
