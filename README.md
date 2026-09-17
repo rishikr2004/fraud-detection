@@ -1,4 +1,5 @@
 # Credit Card Fraud Detection
+[![CI](https://github.com/rishikr2004/fraud-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/rishikr2004/fraud-detection/actions/workflows/ci.yml)
 
 An end-to-end ML pipeline that detects fraudulent credit card transactions,
 built to demonstrate the full ML engineering lifecycle: data → training →
